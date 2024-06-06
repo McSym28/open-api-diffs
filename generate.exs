@@ -8,11 +8,11 @@ ref =
       ref
 
     _else ->
-      raise "Invalid invocation: please pass the ref of aj-foster/open-api-generator to install"
+      raise "Invalid invocation: please pass the ref of McSym28/open-api-generator to install"
   end
 
 Mix.install([
-  {:oapi_generator, github: "aj-foster/open-api-generator", ref: ref}
+  {:oapi_generator, github: "McSym28/open-api-generator", ref: ref}
 ])
 
 #
