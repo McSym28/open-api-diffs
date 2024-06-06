@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ref:
-        description: Ref of aj-foster/open-api-generator
+        description: Ref of McSym28/open-api-generator
         required: true
         type: string
 
@@ -44,6 +44,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add output/
-          git commit -m "Generated output for aj-foster/open-api-generator@$REF"
+          git commit -m "Generated output for McSym28/open-api-generator@$REF"
           git tag -f "oapi_generator/$REF"
           git push --tags --force
